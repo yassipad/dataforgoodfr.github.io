@@ -1,19 +1,14 @@
 title: Data for Good
-description: Le numérique au service de l'intérêt général
+description: Digital al servicio del interés general
 author: Data for Good
 twitter:
-  username: dataforgoodfr
-facebook:
-  publisher: dataforgoodfr
+  username: DataForGood_BCN
 logo: /img/logo.png
 social:
   links:
-    - https://twitter.com/dataforgoodfr
-    - https://www.facebook.com/dataforgoodfr
-    - https://www.linkedin.com/company/10627994/
-    - https://github.com/dataforgoodfr
-google_site_verification: 5MDM_rNGP6gGksm9Lo8Yh_w8kjmP16VBypX1_Ev8MT4
-lang: fr_FR
+    - https://twitter.com/DataForGood_BCN
+google_site_verification:
+lang: es_ES
 
 # Build settings
 markdown: kramdown

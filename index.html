@@ -11,19 +11,19 @@ layout: default
        <section id="mission">
          <div class="row">
            <div class="col-md-8 offset-md-2 my-4">
-             <h2 class="text-center">Notre vision</h2>
-             <p>Les technologies numériques sont incroyablement puissantes et redéfinissent le fonctionnement de notre société. Mais tous les domaines ne se transforment pas à la même vitesse. Très souvent, les acteurs qui œuvrent pour l’intérêt général* sont en retard par rapport aux startups et aux géants de la tech. <b>Data for Good existe pour rétablir l’équilibre.</b></p>
-             <p>* citoyens, associations, institutions publiques et entreprises à fort impact social.</p>
+             <h2 class="text-center">Nuestra visión</h2>
+             <p>Las tecnologías digitales son increíblemente poderosas y están redefiniendo cómo funciona nuestra sociedad. Pero no todos los dominios están cambiando a la misma velocidad. Muy a menudo, los actores que trabajan para el interés general * se están quedando atrás de las startups y los gigantes tecnológicos. <b>Data for Good existe para restablecer el equilibrio.</b></p>
+             <p>* ciudadanos, asociaciones, instituciones públicas y empresas con alto impacto social.</p>
 
-             <h2 class="text-center">Notre mission</h2>
-             <p>Chaque jour, de nouveaux défis sont à relever en matière de santé, d’environnement, d’inclusion sociale, d’éducation ou de citoyenneté. Et chaque jour, de nouvelles idées germent et de plus en plus de citoyens veulent s’engager.</p>
-             <p>La communauté Data for Good rassemble celles et ceux qui veulent façonner des projets concrets et sur mesure en réponse à ces défis. Elle offre un cadre vivant et bienveillant où ces projets éclosent, mûrissent et se déploient.</p>
+             <h2 class="text-center">Nuestra misión</h2>
+             <p>Todos los días se enfrentan nuevos desafíos en materia de salud, medio ambiente, inclusión social, educación o ciudadanía. Y todos los días surgen nuevas ideas y más y más ciudadanos quieren involucrarse.</p>
+             <p>La comunidad Data for Good reúne a aquellos que desean diseñar proyectos concretos y adaptados en respuesta a estos desafíos. Proporciona un entorno de vida y cuidado donde estos proyectos nacen, maduran y se desarrollan.</p>
 
-             <h2 class="text-center">Nos valeurs</h2>
-             <p><b>Des optimistes pragmatiques</b> – qui s’engagent à résoudre de vrais problèmes à travers une méthode d’accompagnement ascendante et itérative.</p>
-             <p><b>Des artisans de l’open source</b> – qui veulent que les progrès des uns puissent être réutilisés pour faire avancer les autres. Tout contenu produit au sein des projets (code, visuels, documentation, etc.) est publié sous une licence libre.</p>
-             <p><b>Des hackers indépendants</b> – qui ont choisi d’être 100% bénévoles pour conserver toute liberté dans leur prise de décisions.</p>
-             <p><b>Un collectif de bâtisseurs</b>  – qui ont conscience que la technologie n’est pas la réponse à tout, mais qui veulent construire brique par brique le monde de demain.</p>
+             <h2 class="text-center">Nuestros valores</h2>
+             <p><b>Los optimistas pragmáticos</b> – que se comprometen a resolver problemas reales a través de un método de acompañamiento ascendente e iterativo.</p>
+             <p><b>Artesanos de código abierto</b> – quieren que el progreso de algunos se reutilice para avanzar a otros. Todo el contenido producido dentro de los proyectos (código, visuales, documentación, etc.) se publica bajo una licencia gratuita.</p>
+             <p><b>Los hackers independientes</b> – que han elegido ser 100% voluntarios para mantener la libertad en la toma de decisiones.</p>
+             <p><b>Un colectivo de constructores</b>  – que saben que la tecnología no es la respuesta a todo, sino que quieren construir el mundo del ladrillo del mañana.</p>
            </div>
          </div>
        </section>
@@ -31,10 +31,10 @@ layout: default
        <hr class="my-4">
 
        <section id="projects">
-         <h2 class="text-center">Nos projets</h2>
-         <p class="text-center">{{ site.projects | size }} projets ont déjà été accélérés lors des précédentes saisons d'accélération.</p>
+         <h2 class="text-center">Nuestros proyectos</h2>
+         <p class="text-center">{{ site.projects | size }} proyectos ya se han acelerado en las temporadas de aceleración anteriores.</p>
           {% for season in (1..site.number_of_season) reversed %}
-            <h4 class="mt-4" style="text-align:center;">Saison {{ season }}</h4>
+            <h4 class="mt-4" style="text-align:center;">Temporada {{ season }}</h4>
             <div class="row">
               {% for item in site.projects %}
                 {% if item.season == season %}
@@ -81,7 +81,7 @@ layout: default
                             <!--Text-->
                             <p class="card-text">{{ item.description }}</p>
                             <a href="{{ item.url }}" class="deep-orange-text mt-1 d-flex flex-row-reverse">
-                              <h5 class="waves-effect p-2">En savoir plus <i class="fa fa-chevron-right"></i></h5>
+                              <h5 class="waves-effect p-2">Más información <i class="fa fa-chevron-right"></i></h5>
                             </a>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ layout: default
             </div>
           {% endfor %}
 
-           <h4 class="mt-4" style="text-align:center;">Projets hors-saison</h4>
+           <h4 class="mt-4" style="text-align:center;">Proyectos fuera de temporada</h4>
            <div class="row">
              {% for item in site.projects %}
                {% if item.season == 0 %}
@@ -139,7 +139,7 @@ layout: default
                            <!--Text-->
                            <p class="card-text">{{ item.description }}</p>
                            <a href="{{ item.url }}" class="deep-orange-text mt-1 d-flex flex-row-reverse">
-                             <h5 class="waves-effect p-2">En savoir plus <i class="fa fa-chevron-right"></i></h5>
+                             <h5 class="waves-effect p-2">Más información <i class="fa fa-chevron-right"></i></h5>
                            </a>
                        </div>
                    </div>
@@ -160,14 +160,14 @@ layout: default
               <div class="row">
                   <!--First column-->
                   <div class="col-md-6 my-4">
-                      <h2>Évènements publics</h2>
-                      <p>Nous présentons nos projets au public à la fin de chaque saison d'accélération, environ trois fois par an.</p>
-                      <p>Ces Demo Days rassemblent des centaines de passionnés de l'innovation sociale permise par la technologie et la data science.</p>
+                      <h2>Eventos públicos</h2>
+                      <p>Presentamos nuestros proyectos al público al final de cada temporada de aceleración, aproximadamente tres veces al año.</p>
+                      <p>Estos Demo Days reúnen a cientos de entusiastas de la innovación social habilitados por la tecnología y la ciencia de datos.</p>
                       <div class="my-4" align="center">
-                        <a href="http://www.meetup.com/Data-for-Good-FR" role="button" class="btn btn-deep-orange">
+                        <a href="https://www.meetup.com/fr-FR/Data-For-Good-Barcelona/" role="button" class="btn btn-deep-orange">
                           <i class="fa fa-calendar pr-2" aria-hidden="true">
                           </i>
-                          Assistez à nos évènements
+                          Asiste a nuestros eventos
                         </a>
                       </div>
                   </div>
@@ -196,10 +196,10 @@ layout: default
               <div class="row">
                   <div class="col-md-8 offset-md-2">
                     <div class="text-center">
-                        <h1 class="h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown h1-header" data-wow-delay="0.3s"><strong>Ralliez la communauté !</strong></h1>
+                        <h1 class="h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown h1-header" data-wow-delay="0.3s"><strong>¡Reúna a la comunidad!</strong></h1>
                         <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
-                        <h4 class="mb-5 white-text wow fadeInDown" data-wow-delay="0.4s">La communauté Data for Good compte plus de 1000 volontaires qui consacrent 4 à 12h par semaine au service d'un projet à impact social.<br><br>Vous êtes data scientist, développeur, designer ou project manager ? Rejoignez-nous !</h4>
-                        <a class="typeform-share button btn btn-deep-orange wow fadeInDown" data-wow-delay="0.4s" href="https://dataforgood.typeform.com/to/goIj4s" data-mode="popup" target="_blank">Devenez volontaire </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                        <h4 class="mb-5 white-text wow fadeInDown" data-wow-delay="0.4s">La comunidad Data for Good tiene más de 1,000 voluntarios que pasan de 4 a 12 horas a la semana en un proyecto de impacto social.<br><br>¿Eres un científico de datos, desarrollador, diseñador o gerente de proyecto? Únete a nosotros!</h4>
+                        <a class="typeform-share button btn btn-deep-orange wow fadeInDown" data-wow-delay="0.4s" href="https://dataforgood.typeform.com/to/goIj4s" data-mode="popup" target="_blank">Hazte voluntario </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
                     </div>
                   </div>
               </div>
@@ -212,7 +212,7 @@ layout: default
         <div class="main-wrapper py-4">
           <div class="container-fluid">
             <section id="partners" class="dark-section">
-              <h2 class="text-center">Nos partenaires</h2>
+              <h2 class="text-center">Nuestros socios</h2>
               <div class="row">
                 <div class="col-lg-3 col-md-6 my-4" align="center">
                   <div class="view overlay hm-white-slight hm-zoom avatar">
@@ -222,7 +222,7 @@ layout: default
                       </a>
                   </div>
                   <h4 class="card-title mt-4">Bayes Impact</h4>
-                  <p class="card-text">Bayes Impact soutient la communauté Data for Good dans le développement des projets de data science.</p>
+                  <p class="card-text">Bayes Impact apoya a la comunidad Data for Good en el desarrollo de proyectos de ciencia de datos.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 my-4" align="center">
                   <div class="view overlay hm-white-slight hm-zoom avatar">
@@ -232,17 +232,7 @@ layout: default
                       </a>
                   </div>
                   <h4 class="card-title mt-4">Ashoka</h4>
-                  <p class="card-text">Ashoka soutient plus de 3 300 innovateurs sociaux dans le monde. Nous leurs apportons nos compétences techniques.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 my-4" align="center">
-                  <div class="view overlay hm-white-slight hm-zoom avatar">
-                      <img src="https://dataforgood.fr/img/logo-liberte-living-lab.png" class="img-fluid" alt="logo-liberte-living-lab">
-                      <a href="https://liberte.paris/">
-                          <div class="mask"></div>
-                      </a>
-                  </div>
-                  <h4 class="card-title mt-4">Liberté living lab</h4>
-                  <p class="card-text">Le LLL accueille chaque semaine la communauté Data for Good dans le Sentier à Paris pour y développer nos projets.</p>
+                  <p class="card-text">Ashoka apoya a más de 3,300 innovadores sociales de todo el mundo. Les brindamos nuestras habilidades técnicas.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 my-4" align="center">
                   <div class="view overlay hm-white-slight hm-zoom avatar">
@@ -252,7 +242,7 @@ layout: default
                       </a>
                   </div>
                   <h4 class="card-title mt-4">change.org</h4>
-                  <p class="card-text">Nous avons collaboré avec la plus grande plateforme mondiale de pétitions sur la consultation citoyenne Changez 2017.</p>
+                  <p class="card-text">Colaboramos con la mayor plataforma global de peticiones sobre consulta ciudadana "Changez 2017".</p>
                 </div>
               </div>
             </section>
